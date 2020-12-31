@@ -4,6 +4,7 @@ This is a lua module expose prometheus metrics api via subrequest instead of c l
 * support [ngx_http_stub_status_module](http://nginx.org/en/docs/http/ngx_http_stub_status_module.html) and [ngx_http_reqstat_module metrics](http://tengine.taobao.org/document/http_reqstat.html)
 * lua only do not need recompile
 * no effects on performance
+* only implement guage item for above modules
 
 ## requirements
 * [lua-nginx-module](https://github.com/openresty/lua-nginx-module)
