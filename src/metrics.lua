@@ -9,7 +9,7 @@ local function split(str, sep)
 end
 
 local function capture_stub_stat()
-    local res = ngx.location.capture("/nginx_status")
+    local res = ngx.location.capture("/stub_status")
     if res.status == 200 then
         local prom = prometheus.init()
         local pattern = "Active connections: (%d*) \nserver accepts handled requests request_time\n (%d*) (%d*) (%d*) (%d*)\nReading: (%d*) Writing: (%d*) Waiting: (%d*) "
