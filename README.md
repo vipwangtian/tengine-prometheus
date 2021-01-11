@@ -1,4 +1,4 @@
-# Prometheus metric module for [Tengine](http://tengine.taobao.org/)
+# [Prometheus](https://prometheus.io/) metric module for [Tengine](http://tengine.taobao.org/)
 This is a lua module expose prometheus metrics api via subrequest instead of c library.
 
 * 100% compatibility with nginx
